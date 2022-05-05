@@ -138,7 +138,7 @@
 				<div class="col-lg-8 mb-5 mb-lg-0">
 				 	<div id="form_status"></div>
 					<div class="contact-form">
-						<form method="POST" id="fruitkha-contact">
+						<form id="fruitkha-contact" onsubmit="return false;">
                             <p>
                                 <label for="course">Enter the last couse completed</label>
                             </p>
@@ -151,13 +151,17 @@
 							<p>
 								<input type="text" placeholder="Enter the skill acquired" name="skill" id="skill">
 							</p>
-							<p><input type="submit" value="Submit"></p>
+							<p><input type="submit" value="Submit" onclick="recommend()"></p>
 						</form>
 					</div>
 				</div>
-
-                {{recommende-course}}
+				
 			</div>
+			<br>
+			<br>
+			<h2>Result</h2>
+			<br>
+			<p id="hello">the output is displayed here</p>
 		</div>
 	</div>
 	<!-- end contact form -->
@@ -258,6 +262,8 @@
 	<script src="assets/js/form-validate.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+
+	<script src="file.js"></script>
 	
 </body>
 </html>
